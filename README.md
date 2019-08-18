@@ -3,7 +3,7 @@ Run the project in a Docker container
 
 Docker is a tool that allows you to deploy applications inside of software containers. This can be useful for the Raspberry Pi because it allows users to run applications with very little overhead, as long as the application is packaged inside of a Docker image. You simply install Docker and run the container.
 
-## Steps
+## Step-by-step instructions
 
 $ apt-get update  
 $ apt-get upgrade  
