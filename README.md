@@ -43,7 +43,10 @@ CMD ["Installed!"]
 ### Build 'ethereum-internet-access' Docker image
 
 $ docker build -t ethereum-internet-access  
-$ docker container run ethereum-internet-access
+
+### Run the container
+
+$ docker container run ethereum-internet-access  
 
 ## Next steps
 
