@@ -49,7 +49,11 @@ $ docker build -t ethereum-internet-access
 $ docker container run ethereum-internet-access  
 $ docker container ls -a  
 
+### (Optional) Upload 'ethereum-internet-access' Docker image to Docker Hub
+
+$ docker login --username=yourhubusername --password=yourpassword  
+$ docker push yourhubusername/ethereum-internet-access  
+
 ## Next steps
 
 1. Write the necessary 'install-project.sh' bash script for the Dockerfile.  
-2. Upload 'ethereum-internet-access' Docker image to Docker Hub.
