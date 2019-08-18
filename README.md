@@ -47,6 +47,7 @@ $ docker build -t ethereum-internet-access
 ### Run the container
 
 $ docker container run ethereum-internet-access  
+$ docker container ls -a  
 
 ## Next steps
 
