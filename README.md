@@ -5,8 +5,8 @@ Docker is a tool that allows you to deploy applications inside of software conta
 
 ## Steps
 
-$ apt-get update
-$ apt-get upgrade
+$ apt-get update  
+$ apt-get upgrade  
 
 ### Installing Docker
 
@@ -30,20 +30,22 @@ From that point on you can build your docker images with your own base image by 
 
 ### Create the following Dockerfile
 
-nano Dockerfile
+$ nano Dockerfile
 
-FROM raspbian-stretch
-COPY install-project.sh /
-RUN chmod +x /install-project.sh && /install-project.sh
+```
+FROM raspbian-stretch  
+COPY install-project.sh /  
+RUN chmod +x /install-project.sh && /install-project.sh  
 
-CMD ["Installed!"]
+CMD ["Installed!"]  
+```
 
 ### Build 'ethereum-internet-access' Docker image
 
-$ docker build -t ethereum-internet-access
+$ docker build -t ethereum-internet-access  
 $ docker container run ethereum-internet-access
 
 ## Next steps
 
-1. Write the necessary 'install-project.sh' bash script for the Dockerfile.
+1. Write the necessary 'install-project.sh' bash script for the Dockerfile.  
 2. Upload 'ethereum-internet-access' Docker image to Docker Hub.
