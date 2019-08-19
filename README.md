@@ -42,11 +42,11 @@ CMD ["Installed!"]
 
 ### Build 'ethereum-internet-access' Docker image
 
-$ docker build -t ethereum-internet-access  
+$ docker build -t ethereum-internet-access .    
 
 ### Run the container
 
-$ docker container run ethereum-internet-access  
+$ docker container run --name=my-ethereum-internet-access ethereum-internet-access  
 $ docker container ls -a  
 
 ### (Optional) Upload 'ethereum-internet-access' Docker image to Docker Hub
