@@ -8,13 +8,13 @@ Docker is a tool that allows you to deploy applications inside of software conta
 $ apt-get update  
 $ apt-get upgrade  
 
-### Installing Docker
+### Install Docker
 
 $ curl -sSL https://get.docker.com | sh
 
-### Creating a Raspbian Docker base-image
+### Create a Raspbian Docker base-image
 
-First, we need to install debootstrap – a tool for installing a Debian-based Linux distribution into a specified directory on an existing and running operating system.
+We need to install debootstrap – a tool for installing a Debian-based Linux distribution into a specified directory on an existing and running operating system.
 
 $ apt-get install debootstrap
 
