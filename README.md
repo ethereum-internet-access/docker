@@ -12,6 +12,17 @@ $ apt-get upgrade
 
 $ curl -sSL https://get.docker.com | sh
 
+### Manage Docker as a non-root user
+
+If you do not want to preface the docker command with sudo.
+
+$ sudo groupadd docker  
+$ sudo usermod -aG docker pi  
+
+You can also run the following command to activate the changes to groups.
+
+$ newgrp docker  
+
 ### Create a Raspbian Docker base-image
 
 We need to install debootstrap – a tool for installing a Debian-based Linux distribution into a specified directory on an existing and running operating system.
@@ -51,6 +62,7 @@ $ docker container ls -a
 
 ### (Optional) Upload 'ethereum-internet-access' Docker image to Docker Hub
 
+$ docker tag ethereum-internet-access yourhubusername/ethereum-internet-access:latest  
 $ docker login --username=yourhubusername --password=yourpassword  
 $ docker push yourhubusername/ethereum-internet-access  
 
