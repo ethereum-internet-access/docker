@@ -1,7 +1,7 @@
 # docker
 Run the project in a Docker container
 
-Docker is a tool that allows you to deploy applications inside of software containers. This can be useful for the Raspberry Pi because it allows users to run applications with very little overhead, as long as the application is packaged inside of a Docker image. You simply install Docker and run the container.
+Docker is a tool that allows you to deploy applications inside of software containers. This can be useful for the Raspberry Pi because it allows users to run applications with very little overhead, as long as the application is packaged inside of a Docker image. We simply install Docker and run the container.
 
 ## Step-by-step instructions
 
@@ -14,12 +14,12 @@ $ curl -sSL https://get.docker.com | sh
 
 ### Manage Docker as a non-root user
 
-If you do not want to preface the docker command with sudo.
+If we do not want to preface the docker command with sudo.
 
 $ sudo groupadd docker  
 $ sudo usermod -aG docker pi  
 
-You can also run the following command to activate the changes to groups.
+We can also run the following command to activate the changes to groups.
 
 $ newgrp docker  
 
