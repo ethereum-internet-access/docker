@@ -5,11 +5,12 @@ Docker is a tool that allows you to deploy applications inside of software conta
 
 ## Step-by-step instructions
 
-$ apt-get update  
-$ apt-get upgrade  
+$ sudo apt-get update  
+$ sudo apt-get upgrade  
 
 ### Install Docker
 
+$ sudo apt-get install curl  
 $ curl -sSL https://get.docker.com | sh
 
 ### Manage Docker as a non-root user
@@ -27,15 +28,15 @@ $ newgrp docker
 
 We need to install debootstrap – a tool for installing a Debian-based Linux distribution into a specified directory on an existing and running operating system.
 
-$ apt-get install debootstrap
+$ sudo apt-get install debootstrap
 
 The following command will call debootstrap and install Raspbian Stretch (minimal image) into the directory "raspbian-stretch" in the current working directory:
 
-$ debootstrap --variant=minbase --arch=armhf stretch raspbian-stretch http://archive.raspbian.org/raspbian
+$ sudo debootstrap --variant=minbase --arch=armhf stretch raspbian-stretch http://archive.raspbian.org/raspbian
 
 Then, we need to convert the directory into a docker base image using:
 
-$ tar -C raspbian-stretch -c . | docker import - raspbian-stretch
+$ sudo tar -C raspbian-stretch -c . | docker import - raspbian-stretch
 
 From that point on you can build your docker images with your own base image by specifying the image in the Dockerfile using "FROM raspbian-stretch".
 
@@ -68,4 +69,9 @@ $ docker push yourhubusername/ethereum-internet-access
 
 ## Next steps
 
-1. Write the necessary 'install-project.sh' bash script for the Dockerfile.  
+1. Write the required 'install-project.sh' bash script for the Dockerfile.  
+
+```
+#!/bin/bash
+echo "Installing project ..."
+```
