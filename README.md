@@ -1,7 +1,7 @@
 # docker
 Run the project in a Docker container
 
-Docker is a tool that allows you to deploy applications inside of software containers. This can be useful for the Raspberry Pi because it allows users to run applications with very little overhead, as long as the application is packaged inside of a Docker image. We simply install Docker and run the container.
+Docker is a tool that allows you to deploy applications inside of software containers. This can be useful for the Raspberry Pi because it allows users to run applications with very little overhead, as long as the application is packaged inside of a Docker image. We simply install Docker and run the container (over Raspbian/ARM).
 
 ## Step-by-step instructions
 
@@ -60,6 +60,8 @@ $ docker build -t ethereum-internet-access .
 
 $ docker container run --name=my-ethereum-internet-access ethereum-internet-access  
 $ docker container ls -a  
+
+NOTE: All these instructions (commands) are included in 'install-project-inside-docker-container.sh' bash script.  
 
 ### (Optional) Upload 'ethereum-internet-access' Docker image to Docker Hub
 
