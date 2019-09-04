@@ -63,6 +63,13 @@ $ docker container ls -a
 
 NOTE: All these instructions (commands) are included in 'install-project-inside-docker-container.sh' bash script.  
 
+### How to execute it  
+
+$ sudo apt-get install git  
+$ git clone https://github.com/ethereum-internet-access/docker.git  
+$ cd docker  
+$ sh ./install-project-inside-docker-container.sh  
+
 ### (Optional) Upload 'ethereum-internet-access' Docker image to Docker Hub
 
 $ docker tag ethereum-internet-access yourhubusername/ethereum-internet-access:latest  
