@@ -42,7 +42,9 @@ From that point on you can build your docker images with your own base image by 
 
 ### Option B) Usage of Alpine Docker image
 
-A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size. NOTE: We will use this B option.
+A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size.  
+
+NOTE: We will use this B option.  
 
 ### Create the following Dockerfile
 
@@ -67,7 +69,8 @@ $ docker container ls -a
 NOTE: All these instructions (commands) are included in 'install-project-inside-docker-container.sh' bash script.  
 
 ### How to execute it  
- 
+
+$ sudo apt-get install git  
 $ git clone https://github.com/ethereum-internet-access/docker.git  
 $ cd docker  
 $ sh ./install-project-inside-docker-container.sh  
