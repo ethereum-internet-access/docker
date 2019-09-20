@@ -66,9 +66,15 @@ $ docker build -t ethereum-internet-access .
 $ docker container run --name=my-ethereum-internet-access ethereum-internet-access  
 $ docker container ls -a  
 
-NOTE: All these instructions (commands) are included in 'install-project-inside-docker-container.sh' bash script.  
+NOTE: These instructions (commands) from 'sudo groupadd docker' are included in 'install-project-inside-docker-container.sh' bash script.  
 
 ### How to execute it  
+
+$ sudo apt-get update  
+$ sudo apt-get upgrade  
+
+$ sudo apt-get install curl  
+$ curl -sSL https://get.docker.com | sh  
 
 $ sudo apt-get install git  
 $ git clone https://github.com/ethereum-internet-access/docker.git  
